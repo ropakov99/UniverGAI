@@ -1,0 +1,27 @@
+version: '3.2'
+
+services:
+
+  bd:
+    image: postgres:latest
+    container_name: bd
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=bd
+    restart: unless-stopped
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  postgres-data:
