@@ -1,35 +1,50 @@
-buildscript {
-    dependencies {
-        classpath "io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE"
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE"
-    }
+plugins {
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
 }
 
+def SecurityVersion = '5.3.1.RELEASE'
+def SpringContext = '5.2.5.RELEASE'
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
 configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
 }
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
+dependencies {
+    compile group: 'net.sf.ehcache', name: 'ehcache-core', version: '2.6.11'
 
-allprojects {
-    apply plugin: 'org.springframework.boot'
+    compile group: 'org.springframework.security', name: 'spring-security-acl', version: SecurityVersion
+    compile group: 'org.springframework', name: 'spring-context-support', version: SpringContext
 
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
-
-    dependencyManagement {
-        dependencies {
-            dependency "org.springframework.boot:spring-boot-starter:2.4.4"
-            dependency "org.springframework.boot:spring-boot-starter-web:2.4.4"
-            dependency "org.springframework.boot:spring-boot-starter-security:2.4.4"
-            dependency "org.springframework.boot:spring-boot-starter-data-jpa:2.4.4"
-            dependency "org.flywaydb:flyway-core:6.5.7"
-        }
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.flywaydb:flyway-core'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'org.postgresql:postgresql'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+test {
+    useJUnitPlatform()
 }
 

@@ -1,2 +1,14 @@
-com/univer/gai/GaiApplication.java
- com.univer.gai.GaiApplication
+com/example/security/user/User.java
+ com.example.security.user.User
+com/example/security/user/UserController.java
+ com.example.security.user.UserController
+com/example/security/auth/WebSecurityConfig.java
+ com.example.security.auth.WebSecurityConfig
+com/example/security/VodilaApplication.java
+ com.example.security.VodilaApplication
+com/example/security/user/Role.java
+ com.example.security.user.Role
+com/example/security/user/UserService.java
+ com.example.security.user.UserService
+com/example/security/user/UserRepository.java
+ com.example.security.user.UserRepository

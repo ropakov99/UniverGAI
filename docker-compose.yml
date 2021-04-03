@@ -2,9 +2,9 @@ version: '3.2'
 
 services:
 
-  bd:
+  vodila_bd:
     image: postgres:latest
-    container_name: bd
+    container_name: vodila_bd
     volumes:
       - postgres-data:/var/lib/postgresql/data
     expose:
@@ -14,7 +14,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=bd
+      - POSTGRES_DB=vodila_bd
     restart: unless-stopped
     networks:
       - my_network
