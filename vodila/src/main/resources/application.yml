@@ -1,0 +1,12 @@
+server:
+  port: ${PORT:9000}
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: ${POSTGRES_PASSWORD:postgres}
+    username: ${POSTGRES_USERNAME:postgres}
+    url: ${POSTGRES_URI:jdbc:postgresql://localhost:5432/vodila_bd}
+
+

@@ -3,25 +3,89 @@ version: '3.2'
 services:
 
   vodila_bd:
-    image: postgres:latest
+    image: postgres
     container_name: vodila_bd
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
+    environment:
+          - POSTGRES_PASSWORD=postgres
+          - POSTGRES_USER=postgres
+          - POSTGRES_DB=vodila_bd
+
     expose:
       - 5432
     ports:
       - 5432:5432
-    environment:
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=vodila_bd
     restart: unless-stopped
     networks:
       - my_network
+    volumes:
+      - app-volume:/var/lib/postgresql/data
+
+  offense_bd:
+    image: postgres
+    container_name: offense_bd
+    environment:
+          - POSTGRES_PASSWORD=postgres
+          - POSTGRES_USER=postgres
+          - POSTGRES_DB=offense_bd
+    expose:
+      - 5433
+    ports:
+      - 5433:5433
+    restart: unless-stopped
+    networks:
+      - my_network
+    volumes:
+      - app-volume:/var/lib/postgresql/data
+
+
+volumes:
+  app-volume:
 
 networks:
   my_network:
     driver: bridge
 
-volumes:
-  postgres-data:
+
+
+#services:
+#
+#  vodila_bd:
+#    image: postgres:latest
+#    container_name: vodila_bd
+#    volumes:
+#      - postgres-data:/var/lib/postgresql/data
+#    expose:
+#      - 5432
+#    ports:
+#      - 5432:5432
+#    environment:
+#      - POSTGRES_PASSWORD=postgres
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_DB=vodila_bd
+#    restart: unless-stopped
+#    networks:
+#      - my_network
+#
+#    offense_bd:
+#      image: postgres:latest
+#      container_name: offense_bd
+#      volumes:
+#        - postgres-data:/var/lib/postgresql/data
+#      expose:
+#        - 5433
+#      ports:
+#        - 5433:5433
+#      environment:
+#        - POSTGRES_PASSWORD=postgres
+#        - POSTGRES_USER=postgres
+#        - POSTGRES_DB=offense_bd
+#      restart: unless-stopped
+#      networks:
+#        - my_network
+#
+#networks:
+#  my_network:
+#    driver: bridge
+#
+#volumes:
+#  postgres-data:
