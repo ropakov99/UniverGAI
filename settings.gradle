@@ -2,5 +2,4 @@ rootProject.name = 'gai'
 
 include 'user'
 include 'offense'
-include 'vodila'
 

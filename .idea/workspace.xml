@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d69ce59-36e3-4c0a-8c06-a002b93f7fad" name="Default Changelist" comment="add docker-compose.yml file with DB postgres">
-      <change afterPath="$PROJECT_DIR$/offense/src/main/java/com/example/offense/Offence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offense/src/main/java/com/example/offense/OffenceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offense/src/main/java/com/example/offense/OffenceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offense/src/main/java/com/example/offense/OffenceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offense/src/main/java/com/example/offense/OffenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V1__Create_offense_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V2__add_offense.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/security/user/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -27,32 +21,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/UserController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offense/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/offense/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offense/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/offense/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V1__Create_offense_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V1__Create_offense_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V2__add_offense.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/VodilaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/VodilaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/auth/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/auth/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/user/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/Vodila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/security/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/offense/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_user_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/resources/db/migration/V1__Create_user_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__add_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/resources/db/migration/V2__add_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/security/VodilaApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/VodilaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/auth/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/user/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/user/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/user/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/user/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/user/Vodila.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vodila/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/resources/db/migration/V1__Create_user_table.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/resources/db/migration/V2__add_users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/VodilaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/SecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/auth/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/auth/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/Vodila.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/resources/db/migration/V1__Create_user_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/db/migration/V1__Create_user_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodila/src/main/resources/db/migration/V2__add_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/db/migration/V2__add_users.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +48,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,33 +80,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/offense/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user/src/main/resources" />
+      <recent name="$PROJECT_DIR$/user/src/main/java" />
       <recent name="$PROJECT_DIR$/offense/src/main/resources" />
       <recent name="$PROJECT_DIR$/vodila/src" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/user/src/main/resources" />
-      <recent name="$PROJECT_DIR$/user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user/src/main/resources/db" />
       <recent name="$PROJECT_DIR$/offense/src/main/resources/db" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OffenceApplication">
-    <configuration name="GaiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.univer.gai.GaiApplication" />
-      <module name="gai.main" />
+  <component name="RunManager" selected="Application.SecurityApplication">
+    <configuration name="OffenceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.offense.OffenceApplication" />
+      <module name="gai.offense.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.univer.gai.*" />
+          <option name="PATTERN" value="com.example.offense.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OffenceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.offense.OffenceApplication" />
-      <module name="gai.offense.main" />
+    <configuration name="SecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="security.SecurityApplication" />
+      <module name="gai.user.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.offense.*" />
+          <option name="PATTERN" value="security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,13 +161,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="gai.offense.test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="gai.offense.test" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SecurityApplication" />
         <item itemvalue="Application.OffenceApplication" />
         <item itemvalue="Application.VodilaApplication (2)" />
         <item itemvalue="Application.VodilaApplication (1)" />
         <item itemvalue="Application.VodilaApplication" />
-        <item itemvalue="Application.GaiApplication" />
       </list>
     </recent_temporary>
   </component>
