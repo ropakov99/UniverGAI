@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d69ce59-36e3-4c0a-8c06-a002b93f7fad" name="Default Changelist" comment="add docker-compose.yml file with DB postgres">
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/security/user/UserController.java" afterDir="false" />
+    <list default="true" id="3d69ce59-36e3-4c0a-8c06-a002b93f7fad" name="Default Changelist" comment="fix postgresql docker connection for users">
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/db/migration/V2__offence.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,30 +14,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offense/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/offense/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/offense/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/offense/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V1__Create_offense_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V1__Create_offense_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V2__add_offense.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/VodilaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/SecurityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/auth/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/auth/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/Vodila.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/java/com/example/security/user/VodilaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/security/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/resources/db/migration/V1__Create_user_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/db/migration/V1__Create_user_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodila/src/main/resources/db/migration/V2__add_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/db/migration/V2__add_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offense/src/main/resources/db/migration/V1__Create_offense_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/db/migration/V1__Create_user_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/db/migration/V1__Create_user_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/db/migration/V2__add_users.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,28 +62,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/offense/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/offense/src/main/resources" />
       <recent name="$PROJECT_DIR$/user/src/main/resources" />
       <recent name="$PROJECT_DIR$/user/src/main/java" />
-      <recent name="$PROJECT_DIR$/offense/src/main/resources" />
       <recent name="$PROJECT_DIR$/vodila/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/user/src/main/resources/db" />
       <recent name="$PROJECT_DIR$/offense/src/main/resources/db" />
+      <recent name="$PROJECT_DIR$/user/src/main/resources/db" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SecurityApplication">
+  <component name="RunManager" selected="Application.OffenceApplication">
     <configuration name="OffenceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.offense.OffenceApplication" />
       <module name="gai.offense.main" />
@@ -262,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617484626798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix postgresql docker connection for users">
+      <created>1617561258197</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617561258197</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +270,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="add submodules" />
     <MESSAGE value="add docker-compose.yml file with DB postgres" />
-    <option name="LAST_COMMIT_MESSAGE" value="add docker-compose.yml file with DB postgres" />
+    <MESSAGE value="fix postgresql docker connection for users" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix postgresql docker connection for users" />
   </component>
 </project>

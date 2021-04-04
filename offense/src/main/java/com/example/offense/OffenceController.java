@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@PreAuthorize("hasAuthority('USER') or hasAuthority('ADMIN')")
 @RequestMapping("/user")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
