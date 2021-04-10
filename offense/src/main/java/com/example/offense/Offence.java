@@ -20,7 +20,7 @@ public class Offence {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
 
-    long user_id;
+    long userId;
 
     String description;
 

@@ -33,6 +33,11 @@ public class OffenceController {
         return service.getById(id).orElse(new Offence());
     }
 
+    @GetMapping("/user/{id}")
+    public List<Offence> getByUserId(@PathVariable(name = "id") Long id){
+        return service.getByUserId(id);
+    }
+
     @DeleteMapping(value = "/{id}")
     public void deleteById(@PathVariable(name = "id") Long id){
         service.deleteById(id);

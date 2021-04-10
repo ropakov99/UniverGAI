@@ -20,6 +20,10 @@ public class OffenceService {
         return repository.findAll();
     }
 
+    public List<Offence> getByUserId(Long id) {
+        return repository.findAllByUserId(id);
+    }
+
     public Optional<Offence> getById(Long id) {
         return repository.findById(id);
     }
