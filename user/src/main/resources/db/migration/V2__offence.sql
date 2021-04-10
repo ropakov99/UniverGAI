@@ -1,9 +1,9 @@
 
 INSERT INTO usr (username,password) VALUES
- ('admin','aaaa'),
- ('user1','2222'),
- ('user2','3333'),
- ('user3','4444');
+ ('admin','1111'),
+ ('user1','1111'),
+ ('user2','2222'),
+ ('user3','3333');
 
 INSERT INTO user_role (user_id,roles) VALUES
     (1,'ADMIN'),

@@ -1,24 +1,24 @@
---create table user_role (
---    user_id int8 not null,
---    roles varchar(255)
---);
---
---create table usr (
---    id serial not null,
---    password varchar(255) not null,
---    username varchar(255) not null,
---    primary key (id)
---);
---
---create table offence (
---    id serial not null,
---    user_id serial not null,
---    description varchar(255) not null,
---    price int8 not null,
---    primary key (id)
---);
---
---alter table if exists user_role
---    add constraint user_role_user_fk
---    foreign key (user_id) references usr;
---
+create table user_role (
+    user_id int8 not null,
+    roles varchar(255)
+);
+
+create table usr (
+    id serial not null,
+    password varchar(255) not null,
+    username varchar(255) not null,
+    primary key (id)
+);
+
+create table offence (
+    id serial not null,
+    user_id serial not null,
+    description varchar(255) not null,
+    price int8 not null,
+    primary key (id)
+);
+
+alter table if exists user_role
+    add constraint user_role_user_fk
+    foreign key (user_id) references usr;
+

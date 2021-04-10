@@ -3,6 +3,7 @@ package security.user;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -13,11 +14,10 @@ import java.util.Optional;
 
 @Service
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
 public class UserService implements UserDetailsService {
 
+    @Autowired
     UserRepository userRepository;
-
 
     public List<User> getAllUsers(){
         return  userRepository.findAll();
