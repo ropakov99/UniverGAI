@@ -1,8 +1,8 @@
 package com.example.offense;
 
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,9 +11,9 @@ import java.util.Optional;
 
 @Service
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
 public class OffenceService {
 
+    @Autowired
     OffenceRepository repository;
 
     public List<Offence> getAll() {

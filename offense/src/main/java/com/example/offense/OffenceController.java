@@ -3,6 +3,7 @@ package com.example.offense;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,11 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/offence")
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
 public class OffenceController {
 
+    @Autowired
     OffenceService service;
 
     @GetMapping
