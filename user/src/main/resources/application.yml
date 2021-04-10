@@ -7,6 +7,5 @@ spring:
     driver-class-name: org.postgresql.Driver
     password: ${POSTGRES_PASSWORD:postgres}
     username: ${POSTGRES_USERNAME:postgres}
-    url: ${POSTGRES_URI:jdbc:postgresql://localhost:5432/users}
-
+    url: jdbc:postgresql://localhost:5432/users
 
