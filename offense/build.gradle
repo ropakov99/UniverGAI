@@ -21,12 +21,15 @@ repositories {
 
 dependencies {
 
-    compile group: 'org.springframework.security', name: 'spring-security-acl', version: SecurityVersion
     compile group: 'org.springframework', name: 'spring-context-support', version: SpringContext
+
+    implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
+    implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
 
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.4'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.4'
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+//    implementation group: 'org.flywaydb', name: 'flyway-core', version: '7.7.2'
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
 }
 

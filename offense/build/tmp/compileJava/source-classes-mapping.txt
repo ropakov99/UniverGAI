@@ -1,3 +1,5 @@
+com/example/offense/OffenceRepository.java
+ com.example.offense.OffenceRepository
 com/example/offense/OffenceApplication.java
  com.example.offense.OffenceApplication
 com/example/offense/Offence.java
@@ -6,5 +8,3 @@ com/example/offense/OffenceController.java
  com.example.offense.OffenceController
 com/example/offense/OffenceService.java
  com.example.offense.OffenceService
-com/example/offense/OffenceRepository.java
- com.example.offense.OffenceRepository

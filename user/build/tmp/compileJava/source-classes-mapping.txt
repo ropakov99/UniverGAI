@@ -1,14 +1,14 @@
 security/user/Role.java
  security.user.Role
-security/user/User.java
- security.user.User
-security/user/UserRepository.java
- security.user.UserRepository
-security/SecurityApplication.java
- security.SecurityApplication
 security/user/UserController.java
  security.user.UserController
 security/auth/WebSecurityConfig.java
  security.auth.WebSecurityConfig
+security/SecurityApplication.java
+ security.SecurityApplication
+security/user/User.java
+ security.user.User
 security/user/UserService.java
  security.user.UserService
+security/user/UserRepository.java
+ security.user.UserRepository
