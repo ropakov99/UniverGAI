@@ -39,15 +39,15 @@ public class OffenceService {
     }
 
     public boolean payOffence(Long id) {
-        Offence offence = repository.getOne(id);
-        Card card = RestClient.sendHttpRequest("/bank", HttpMethod.GET,null, HttpHeaders.EMPTY);
+        Offence offence = repository.findById(id).orElse(new Offence());
+        Card card = RestClient.sendHttpRequest("card/"+id, HttpMethod.GET,null, HttpHeaders.EMPTY);
         Long result = card.getSummary() - offence.getPrice();
         if (result<0){
             return false;
         }
-        repository.deleteById(id);
         card.setSummary(result);
-        RestClient.sendHttpRequest("/bank", HttpMethod.PUT,card, HttpHeaders.EMPTY);
+        RestClient.sendHttpRequest("/card/"+id+"/", HttpMethod.PUT,card, HttpHeaders.EMPTY);
+        repository.deleteById(id);
         return true;
     }
 

@@ -19,17 +19,17 @@ public class RestClient {
     @SuppressWarnings("rawtypes")
     private static final ResponseEntity ERROR_RESPONSE_ENTITY = new ResponseEntity(null, HttpStatus.INTERNAL_SERVER_ERROR);
 
-    private static final String serverUrl = "localhost";
+    private static final String serverUrl = "http://localhost:8000/api/";
 
     private static final ObjectMapper mapper = new ObjectMapper();
 
     private static final RestTemplate restTemplate = new RestTemplate();
 
+
     public static Card sendHttpRequest(String resource, HttpMethod method,
         Object requestObject, HttpHeaders headers) {
         HttpEntity<Object> requestEntity = new HttpEntity<>(requestObject, headers);
         String url = serverUrl + resource;
-
         ResponseEntity<Card> responseEntity;
         responseEntity = restTemplate.exchange(url, method, requestEntity, Card.class);
         return responseEntity.getBody();

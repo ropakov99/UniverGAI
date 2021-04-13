@@ -19,6 +19,22 @@ create table offence (
     primary key (id)
 );
 
+CREATE TABLE testdb_card (
+    id serial NOT NULL,
+    summary double precision,
+    primary key (id)
+);
+
+CREATE TABLE carapi_car (
+    id serial NOT NULL,
+    user_id integer NOT NULL,
+    number character varying(10) NOT NULL,
+    condition character varying(20) NOT NULL,
+    registration character varying(30) NOT NULL,
+    hijaked boolean NOT NULL,
+    primary key (id)
+);
+
 alter table if exists user_role
     add constraint user_role_user_fk
     foreign key (user_id) references usr;
