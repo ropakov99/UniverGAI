@@ -1,5 +1,6 @@
 package com.example.offense;
 
+import com.example.offense.model.Offence;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
