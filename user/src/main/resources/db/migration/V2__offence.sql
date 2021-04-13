@@ -1,9 +1,9 @@
 
-INSERT INTO usr (username,password) VALUES
- ('admin','1111'),
- ('user1','1111'),
- ('user2','2222'),
- ('user3','3333');
+INSERT INTO usr (username,password,email) VALUES
+ ('admin','1111','aaa@email.com'),
+ ('user1','1111','ccc@email.com'),
+ ('user2','2222','bbb@email.com'),
+ ('user3','3333','ddd@email.com');
 
 INSERT INTO user_role (user_id,roles) VALUES
     (1,'ADMIN'),

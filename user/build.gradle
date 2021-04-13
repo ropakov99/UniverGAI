@@ -20,12 +20,6 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'org.springframework.security', name: 'spring-security-config', version: '5.4.5'
-
-    implementation group: 'org.springframework.security', name: 'spring-security-core', version: '5.4.5'
-    implementation group: 'org.springframework.security', name: 'spring-security-web', version: '5.4.5'
-
-    compile group: 'org.springframework.security', name: 'spring-security-acl', version: SecurityVersion
     compile group: 'org.springframework', name: 'spring-context-support', version: SpringContext
 
     implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
