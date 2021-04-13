@@ -1,7 +1,7 @@
 security/user/Role.java
  security.user.Role
-security/user/UserController.java
- security.user.UserController
+security/conf/WebConfig.java
+ security.conf.WebConfig
 security/SecurityApplication.java
  security.SecurityApplication
 security/user/User.java
@@ -10,5 +10,5 @@ security/user/UserService.java
  security.user.UserService
 security/user/UserRepository.java
  security.user.UserRepository
-security/conf/WebConfig.java
- security.conf.WebConfig
+security/user/UserController.java
+ security.user.UserController
