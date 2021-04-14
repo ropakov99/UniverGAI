@@ -38,16 +38,16 @@ public class OffenceService {
         repository.deleteById(id);
     }
 
-    public boolean payOffence(Long id) {
-        Offence offence = repository.findById(id).orElse(new Offence());
-        Card card = RestClient.sendHttpRequest("card/"+id, HttpMethod.GET,null, HttpHeaders.EMPTY);
+    public boolean payOffence(Long idCard,Long idOffence) {
+        Offence offence = repository.findById(idOffence).orElse(new Offence());
+        Card card = RestClient.sendHttpRequest("card/"+idCard, HttpMethod.GET,null, HttpHeaders.EMPTY);
         Long result = card.getSummary() - offence.getPrice();
         if (result<0){
             return false;
         }
         card.setSummary(result);
-        RestClient.sendHttpRequest("/card/"+id+"/", HttpMethod.PUT,card, HttpHeaders.EMPTY);
-        repository.deleteById(id);
+        RestClient.sendHttpRequest("/card/"+idCard+"/", HttpMethod.PUT,card, HttpHeaders.EMPTY);
+        repository.deleteById(idOffence);
         return true;
     }
 

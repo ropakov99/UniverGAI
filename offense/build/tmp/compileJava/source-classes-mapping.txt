@@ -8,9 +8,9 @@ com/example/offense/model/Offence.java
  com.example.offense.model.Offence
 com/example/offense/OffenceRepository.java
  com.example.offense.OffenceRepository
+com/example/offense/rest/RestClient.java
+ com.example.offense.rest.RestClient
 com/example/offense/OffenceController.java
  com.example.offense.OffenceController
 com/example/offense/OffenceService.java
  com.example.offense.OffenceService
-com/example/offense/rest/RestClient.java
- com.example.offense.rest.RestClient

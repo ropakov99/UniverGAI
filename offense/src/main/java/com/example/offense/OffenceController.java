@@ -34,9 +34,9 @@ public class OffenceController {
         return service.getById(id).orElse(new Offence());
     }
 
-    @GetMapping("/pay/{id}")
-    public Boolean payOffence(@PathVariable(name = "id") Long id){
-        return service.payOffence(id);
+    @GetMapping("/{idOffence}/pay/{idCard}")
+    public Boolean payOffence(@PathVariable(name = "idOffence") Long idOffence,@PathVariable(name = "idCard") Long idCard){
+        return service.payOffence(idCard,idOffence);
     }
 
     @GetMapping("/user/{id}")

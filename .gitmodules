@@ -1,0 +1,3 @@
+[submodule "django-car"]
+	path = django-car
+	url = https://github.com/Byalko/django-car
