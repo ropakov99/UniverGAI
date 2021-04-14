@@ -1,3 +1,6 @@
 [submodule "django-car"]
 	path = django-car
 	url = https://github.com/Byalko/django-car
+[submodule "django-bank"]
+	path = django-bank
+	url = https://github.com/Byalko/django-bank.git
